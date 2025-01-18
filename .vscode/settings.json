@@ -1,0 +1,12 @@
+{
+    "java.project.referencedLibraries": [
+        "ResultSet2xml.jar",
+        "c:\\Program Files\\MySQL\\mysql-connector-j-9.1.0.jar",
+        "c:\\Program Files\\Java\\rs2xml.jar"
+    ],
+    "java.project.sourcePaths": [
+        ".",
+        "data\\src"
+    ],
+    "java.format.settings.url": ".vscode/java-formatter.xml"
+}
