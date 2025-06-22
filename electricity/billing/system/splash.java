@@ -27,6 +27,7 @@ public class splash  extends JFrame{
     }
     public static void main(String[] args) {
         new splash();
+     
     }
     
     }

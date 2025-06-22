@@ -59,7 +59,7 @@ public class  customer_datails extends JFrame implements ActionListener {
         try{
             database c =new database();
             ResultSet resultSet = c.statement.executeQuery("select * from new_customer");
-          //   table.setModel(DbUtils.resultSetToTableModel(resultSet));
+           // table.setModel(DbUtils.resultSetToTableModel(resultSet));
         }catch (Exception e){
             e.printStackTrace();
         }

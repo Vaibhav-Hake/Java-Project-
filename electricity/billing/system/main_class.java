@@ -13,7 +13,7 @@ public class main_class extends JFrame implements  ActionListener {
         this.meter_pass=meter_pass;
         setExtendedState(JFrame.MAXIMIZED_BOTH);
 
-        ImageIcon imageIcon=new ImageIcon(ClassLoader.getSystemResource("icon/background.jpg"));
+        ImageIcon imageIcon=new ImageIcon(ClassLoader.getSystemResource("icon/br1.png"));
         Image image=imageIcon.getImage().getScaledInstance(1530, 830,  Image.SCALE_DEFAULT);
         ImageIcon fimage=new ImageIcon(image);
         JLabel imageLabel=new JLabel(fimage);
@@ -26,11 +26,11 @@ public class main_class extends JFrame implements  ActionListener {
 
 
         JMenu menu=new JMenu("Menu");
-        menu.setFont(new Font("serif",Font.PLAIN, 15));
+        menu.setFont(new Font("serif",Font.PLAIN, 25));
       
 
         JMenuItem newcustomer=new  JMenuItem("New Customer");
-        newcustomer.setFont(new Font("monospaced",Font.PLAIN , 14));
+        newcustomer.setFont(new Font("monospaced",Font.PLAIN , 24));
         ImageIcon customerImg=new ImageIcon(ClassLoader.getSystemResource("icon/newcustomer.png"));
         Image customerImage=customerImg.getImage().getScaledInstance(20, 20,  Image.SCALE_DEFAULT);
        newcustomer.setIcon(new ImageIcon(customerImage));
@@ -40,7 +40,7 @@ public class main_class extends JFrame implements  ActionListener {
 
         
         JMenuItem customerdetails=new  JMenuItem("Customer Details");
-        customerdetails.setFont(new Font("monospaced",Font.PLAIN , 14));
+        customerdetails.setFont(new Font("monospaced",Font.PLAIN , 24));
         ImageIcon customerdetailsImg=new ImageIcon(ClassLoader.getSystemResource("icon/customerDetails.png"));
         Image customerdetailsImage=customerdetailsImg.getImage().getScaledInstance(20, 20,  Image.SCALE_DEFAULT);
        customerdetails.setIcon(new ImageIcon(customerdetailsImage));
@@ -48,7 +48,7 @@ public class main_class extends JFrame implements  ActionListener {
         menu.add(customerdetails);
         
         JMenuItem depositedetails=new  JMenuItem("Deposite Details");
-        depositedetails.setFont(new Font("monospaced",Font.PLAIN , 14));
+        depositedetails.setFont(new Font("monospaced",Font.PLAIN , 24));
         ImageIcon depositedetailsImg=new ImageIcon(ClassLoader.getSystemResource("icon/depositdetails.png"));
         Image depositedetailsImage=depositedetailsImg.getImage().getScaledInstance(20, 20,  Image.SCALE_DEFAULT);
         depositedetails.setIcon(new ImageIcon(depositedetailsImage));
@@ -57,7 +57,7 @@ public class main_class extends JFrame implements  ActionListener {
 
          
         JMenuItem calculatebill=new  JMenuItem("Calculate Bill");
-        calculatebill.setFont(new Font("monospaced",Font.PLAIN , 14));
+        calculatebill.setFont(new Font("monospaced",Font.PLAIN , 24));
         ImageIcon calculateImg=new ImageIcon(ClassLoader.getSystemResource("icon/calculatorbills.png"));
         Image calculateImage=calculateImg.getImage().getScaledInstance(20, 20,  Image.SCALE_DEFAULT);
         calculatebill.setIcon(new ImageIcon(calculateImage));
@@ -65,11 +65,11 @@ public class main_class extends JFrame implements  ActionListener {
         menu.add(calculatebill);
 
         JMenu info=new JMenu("Information");
-        info.setFont(new Font("serif",Font.PLAIN, 15));
+        info.setFont(new Font("serif",Font.PLAIN, 25));
         
 
         JMenuItem upinfo=new  JMenuItem("Update Information");
-        upinfo.setFont(new Font("monospaced",Font.PLAIN , 14));
+        upinfo.setFont(new Font("monospaced",Font.PLAIN , 24));
         ImageIcon infoImg=new ImageIcon(ClassLoader.getSystemResource("icon/refresh.png"));
         Image infoImage=infoImg.getImage().getScaledInstance(20, 20,  Image.SCALE_DEFAULT);
         upinfo.setIcon(new ImageIcon(infoImage));
@@ -77,7 +77,7 @@ public class main_class extends JFrame implements  ActionListener {
         info.add(upinfo);
 
         JMenuItem viewinfo=new  JMenuItem("View Information");
-        viewinfo.setFont(new Font("monospaced",Font.PLAIN , 14));
+        viewinfo.setFont(new Font("monospaced",Font.PLAIN , 24));
         ImageIcon viewinfoImg=new ImageIcon(ClassLoader.getSystemResource("icon/information.png"));
         Image viewinfoImage=viewinfoImg.getImage().getScaledInstance(20, 20,  Image.SCALE_DEFAULT);
         viewinfo.setIcon(new ImageIcon(viewinfoImage));
@@ -85,11 +85,11 @@ public class main_class extends JFrame implements  ActionListener {
         info.add(viewinfo);
 
         JMenu user=new JMenu("User");
-        user.setFont(new Font("serif",Font.PLAIN, 15));
+        user.setFont(new Font("serif",Font.PLAIN, 25));
      
         
         JMenuItem paybill=new  JMenuItem("Pay Bill");
-        paybill.setFont(new Font("monospaced",Font.PLAIN , 14));
+        paybill.setFont(new Font("monospaced",Font.PLAIN , 24));
         ImageIcon payImg=new ImageIcon(ClassLoader.getSystemResource("icon/pay.png"));
         Image payImage=payImg.getImage().getScaledInstance(20, 20,  Image.SCALE_DEFAULT);
         paybill.setIcon(new ImageIcon(payImage));
@@ -97,7 +97,7 @@ public class main_class extends JFrame implements  ActionListener {
         user.add(paybill);
 
         JMenuItem billdetails=new  JMenuItem("Bill Details");
-        billdetails.setFont(new Font("monospaced",Font.PLAIN , 14));
+        billdetails.setFont(new Font("monospaced",Font.PLAIN , 24));
         ImageIcon billdetailsImg=new ImageIcon(ClassLoader.getSystemResource("icon/detail.png"));
         Image billdetailsImage=billdetailsImg.getImage().getScaledInstance(20, 20,  Image.SCALE_DEFAULT);
         billdetails.setIcon(new ImageIcon(billdetailsImage));
@@ -105,11 +105,11 @@ public class main_class extends JFrame implements  ActionListener {
         user.add(billdetails);
 
         JMenu bill=new JMenu("Bill");
-        bill.setFont(new Font("serif",Font.PLAIN, 15));
+        bill.setFont(new Font("serif",Font.PLAIN, 25));
        
 
         JMenuItem genbill=new  JMenuItem("Genrate Bill");
-        genbill.setFont(new Font("monospaced",Font.PLAIN , 14));
+        genbill.setFont(new Font("monospaced",Font.PLAIN , 24));
         ImageIcon genbillImg=new ImageIcon(ClassLoader.getSystemResource("icon/bill.png"));
         Image genbillImage=genbillImg.getImage().getScaledInstance(20, 20,  Image.SCALE_DEFAULT);
         genbill.setIcon(new ImageIcon(genbillImage));
@@ -117,11 +117,11 @@ public class main_class extends JFrame implements  ActionListener {
         bill.add( genbill);
         
         JMenu utility=new JMenu("Utility");
-        utility.setFont(new Font("serif",Font.PLAIN, 15));
+        utility.setFont(new Font("serif",Font.PLAIN, 25));
         
 
         JMenuItem notepad=new  JMenuItem("Notepad");
-        notepad.setFont(new Font("monospaced",Font.PLAIN , 14));
+        notepad.setFont(new Font("monospaced",Font.PLAIN , 24));
         ImageIcon notepadImg=new ImageIcon(ClassLoader.getSystemResource("icon/notepad.png"));
         Image notepadImage=notepadImg.getImage().getScaledInstance(20, 20,  Image.SCALE_DEFAULT);
         notepad.setIcon(new ImageIcon(notepadImage));
@@ -129,7 +129,7 @@ public class main_class extends JFrame implements  ActionListener {
         utility.add(notepad);
 
         JMenuItem Calculator=new  JMenuItem("Calculator");
-        Calculator.setFont(new Font("monospaced",Font.PLAIN , 14));
+        Calculator.setFont(new Font("monospaced",Font.PLAIN , 24));
         ImageIcon CalculatorImg=new ImageIcon(ClassLoader.getSystemResource("icon/calculator.png"));
         Image CalculatorImage=CalculatorImg.getImage().getScaledInstance(20, 20,  Image.SCALE_DEFAULT);
         Calculator.setIcon(new ImageIcon(CalculatorImage));
@@ -137,11 +137,11 @@ public class main_class extends JFrame implements  ActionListener {
         utility.add(Calculator);
 
         JMenu exit=new JMenu("Exit");
-        exit.setFont(new Font("serif",Font.PLAIN, 15));
+        exit.setFont(new Font("serif",Font.PLAIN, 25));
         
 
         JMenuItem eexit=new  JMenuItem("Exit");
-        eexit.setFont(new Font("monospaced",Font.PLAIN , 14));
+        eexit.setFont(new Font("monospaced",Font.PLAIN , 24));
         ImageIcon  eexitImg=new ImageIcon(ClassLoader.getSystemResource("icon/exit.png"));
         Image  eexitImage= eexitImg.getImage().getScaledInstance(20, 20,  Image.SCALE_DEFAULT);
         eexit.setIcon(new ImageIcon( eexitImage));

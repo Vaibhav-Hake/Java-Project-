@@ -2,13 +2,13 @@ package electricity.billing.system;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.util.Random;
 import javax.swing.*;
 
 public class new_customer extends  JFrame implements ActionListener {
-    JLabel heading ,customername,meterno,address,city,state,email,phoneNo,meterText;
-    TextField nameText,addressText,cityText,stateText,emailText,phoneText;
+    JLabel heading ,customername,meterno,address,city,state,email,phoneNo;
+    TextField nameText,addressText,cityText,stateText,emailText,phoneText,  meterText;
     JButton next,cancel;
+    Choice LoginChoice;
 
      new_customer() {
         super("New Customer");
@@ -35,13 +35,12 @@ public class new_customer extends  JFrame implements ActionListener {
         meterno.setBounds(50, 120, 100, 20);
         panel.add(meterno);
 
-        meterText=new  JLabel("");
-        meterText.setBounds(180, 120, 150, 20);
-        panel.add(meterText);
+       meterText=new  TextField();
+       meterText.setBounds(180, 120, 150, 20);
+        panel.add(  meterText);
+     
 
-        Random ran=new Random();
-        long number=ran.nextLong()%100000;
-        meterText.setText(""+Math.abs(number));
+     
 
         address =new JLabel("Address");
         address.setBounds(50, 160, 100, 20);
@@ -63,9 +62,42 @@ public class new_customer extends  JFrame implements ActionListener {
         state.setBounds(50, 240, 100, 20);
         panel.add(state);
 
-        stateText=new  TextField();
-        stateText.setBounds(180, 240, 150, 20);
-        panel.add(stateText);
+       LoginChoice=new Choice();
+      LoginChoice.add("--Select--");
+      LoginChoice.add("Andhra Pradesh");
+      LoginChoice.add("Arunachal Pradesh");
+      LoginChoice.add( "Assam");
+      LoginChoice.add("Bihar");
+      LoginChoice.add("Chhattisgarh");
+      LoginChoice.add( "Goa");
+      LoginChoice.add("Gujarat");
+      LoginChoice.add("Haryana");
+      LoginChoice.add( "Himachal Pradesh");
+      LoginChoice.add( "Jharkhand");
+      LoginChoice.add(
+
+                "Karnataka");
+      LoginChoice.add(
+
+                "Kerala");
+      LoginChoice.add("Madhya Pradesh");
+      LoginChoice.add("Maharashtra");
+      LoginChoice.add( "Manipur");
+      LoginChoice.add("Meghalaya");
+      LoginChoice.add( "Mizoram");
+      LoginChoice.add("Nagaland");
+      LoginChoice.add("Odisha (Orissa)");
+      LoginChoice.add( "Punjab");
+      LoginChoice.add( "Rajasthan");
+      LoginChoice.add("Sikkim");
+      LoginChoice.add("Tamil Nadu");
+      LoginChoice.add("Telangana");
+      LoginChoice.add("Tripura");
+      LoginChoice.add( "Uttar Pradesh");
+      LoginChoice.add("Uttarakhand");
+      LoginChoice.add(  "West Bengal");
+      LoginChoice.setBounds(410, 240, 150, 20);
+      add(LoginChoice);
 
         email =new JLabel("Email");
         email.setBounds(50, 280, 100, 20);
@@ -124,7 +156,7 @@ public class new_customer extends  JFrame implements ActionListener {
            String smeter=meterText.getText();
            String saddress=addressText.getText();
            String scity=cityText.getText();
-           String sstate=stateText.getText();
+           String sstate=LoginChoice.getSelectedItem();
            String eemail=emailText.getText();
            String sphone=phoneText.getText();
 
